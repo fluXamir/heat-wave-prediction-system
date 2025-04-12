@@ -1,60 +1,97 @@
-Heat Wave Prediction System
-A web-based application built using Streamlit and Plotly that forecasts daily temperatures and predicts potential heat waves for a given location and date range. The app visualizes temperature trends and highlights days where the forecasted temperature exceeds a defined threshold, indicating a heat wave.
+# 🌡️ Heat Wave Prediction System
 
-Features:
-User Input: Input a place in India (e.g., Mumbai, Bihar) and select the number of days to be forecasted from 1-5, select data to view temperature and sky.
-Temperature Forecast: Displays daily temperature predictions with a graph and for sky with images.
-Heat Wave Prediction: Predicts days when temperatures exceed a set threshold (e.g., 35°C), potentially indicating a heat wave. THIS FEATURE IS YET TO BE IMPLEMENTED.
+A **web-based application** built using **Streamlit** and **Plotly** that forecasts daily temperatures and visualizes sky conditions for locations in **India**. The system highlights temperature trends and is being developed to include **heat wave prediction** based on a threshold temperature.
 
-Visualizations: Interactive Plotly graphs to help users visualize temperature trends.
+---
 
-How to Run:
-Prerequisites:
-Python 3.7+ installed on your system.
-Pip (Python package installer) should be available to install dependencies.
+## 🚀 Features
 
-1. Clone the Repository
-First, clone the repository to your local machine:
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/heat-wave-prediction.git
+- 🔍 **User Input**  
+  Input any city in India (e.g., *Mumbai*, *Bihar*) and choose the number of forecast days (1–5).
+
+- 🌡️ **Temperature Forecast**  
+  View detailed **daily temperature predictions** with interactive graphs.
+
+- 🌤️ **Sky Condition Visualization**  
+  View sky conditions as **images** (clear, cloudy, rainy, etc.) for the selected days.
+
+- 🔥 **Heat Wave Prediction** *(Coming Soon)*  
+  Automatically detect potential **heat waves** when the forecasted temperature exceeds a threshold (e.g., 35°C).  
+  > 🚧 *This feature is under development.*
+
+- 📈 **Interactive Visualizations**  
+  Created using **Plotly**, making data analysis engaging and easy to interpret.
+
+---
+
+## 🛠️ How to Run
+
+### ✅ Prerequisites
+
+- Python 3.7+ installed on your system.
+- `pip` (Python package installer).
+
+---
+
+### 📦 1. Clone the Repository
+
+```bash
+git clone https://github.com/fluXamir/heat-wave-prediction.git
 cd heat-wave-prediction
-2. Install Dependencies
-Install all required libraries (Streamlit, Plotly, etc.) using pip:
+📥 2. Install Dependencies
+Using requirements.txt:
 bash
 Copy
 Edit
 pip install -r requirements.txt
-If you don't have a requirements.txt file, you can install Streamlit and Plotly manually using:
+Or install manually:
 bash
 Copy
 Edit
 pip install streamlit plotly
-3. Run the Application
-Once the dependencies are installed, run the application with the following command:
+🧾 3. Run the Application
 bash
 Copy
 Edit
 streamlit run main.py
-This will launch the Streamlit web app in your default browser. If it doesn’t open automatically, you can go to http://localhost:8501 to access the app.
-4. Interact with the App
-Input Location: Enter a location for the temperature forecast.
-Select Number of Days to be Forecasted: Select from the slider the number of days to be forecasted from 1-5.
-Select Sky or Temperature: If selected Temperature you can view the graph of the temperature for the selected days and in sky images of the temperature.
-Heat Wave Prediction: The app will predict potential heatwaves based on the forecasted temperatures. THIS IS YET TO BE IMPLEMENTED.
+The app will automatically open in your browser. If not, navigate to:
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+arduino
+Copy
+Edit
+http://localhost:8501
+🧪 4. Interact with the App
+🏙️ Enter Location: Choose any city in India.
 
-Notes:
-The prediction system has not been implemented yet, but the forecasting works perfectly fine.
+📅 Select Forecast Days: Use the slider to pick 1–5 days.
 
-Images:
-![image](https://github.com/user-attachments/assets/808d1042-a1d0-4fb2-a2bd-a9a981d6dadd)
-![image](https://github.com/user-attachments/assets/11fb1ac4-11af-4bad-a810-c4c8b53ae035)
-![image](https://github.com/user-attachments/assets/d622ca9a-5713-403a-b1f9-890bac6c6319)
+🌦️ Choose View:
+
+Temperature – View temperature trends in a graph.
+
+Sky – View visual representations (images) of sky conditions.
+
+🔥 Heat Wave Prediction:
+Feature will soon highlight days with extreme temperatures.
+
+📌 Notes
+✅ Forecasting is fully functional using dummy/mock or real weather data.
+
+⚠️ Heat wave prediction logic is not yet implemented.
+
+🌐 You can integrate a weather API (e.g., OpenWeatherMap) for live data.
+
+📸 Images
+Here’s what the app looks like:
 
 
-Contributions:
-Feel free to fork the repository, make changes, and create pull requests if you would like to contribute to improving this system. 😊
+
+📄 License
+This project is licensed under the MIT License.
+See the LICENSE file for more information.
+
+🤝 Contributions
+Got ideas or improvements?
+Feel free to fork the repo, submit pull requests, or open issues.
+
+Made with ❤️ by fluXamir
